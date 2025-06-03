@@ -54,3 +54,6 @@ Deno.test("Un seul point", () => {
   assertStrictEquals(minesweeper("."), "0");
 });
 
+Deno.test("Une seule mine", () => {
+  assertStrictEquals(minesweeper("*"), "*");
+});
