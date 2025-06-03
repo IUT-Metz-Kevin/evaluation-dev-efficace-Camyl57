@@ -45,7 +45,6 @@ export function minesweeper(input: string): string {
   return result.join("\n");
 }
 
-
 Deno.test("Case vide", () => {
   assertStrictEquals(minesweeper(""), "");
 });
