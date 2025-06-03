@@ -68,3 +68,8 @@ Deno.test("Deux lignes", () => {
   assertStrictEquals(minesweeper(input), expected);
 });
 
+Deno.test("Exemple complet", () => {
+  const input = ".*.**.\n....*.\n..*...";
+  const output = "1*2**2\n1234*2\n01*211";
+  assertStrictEquals(minesweeper(input), output);
+});
